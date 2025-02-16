@@ -935,7 +935,7 @@ public:
         routerPath.insertNode(j);
     }
 
-    void dijkstra()
+    void dijkstra_algorithm()
     {
         /*for all vertices the loop sets distance to infinity and marks then as unvisited
         path is the vertix that comes before the concerned vertex and is used to find the path later on*/
@@ -1255,7 +1255,7 @@ int main()
                 rt.sourceNode = msgtemp.src_add;
                 rt.destinationNode = msgtemp.des_add;
 
-                rt.dijkstra();
+                rt.dijkstra_algorithm();
                 int noOfRouters = rt.routerPath.size;
                 router* routers = new router[noOfRouters];
 
@@ -1301,7 +1301,7 @@ int main()
         {
             message m(readMessageFromFile("message.txt"));
             routingTable rt(m);
-            rt.dijkstra();
+            rt.dijkstra_algorithm();
 
             int noOfRouters = rt.routerPath.size;
             router* routers = new router[noOfRouters];
