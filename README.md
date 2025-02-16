@@ -25,7 +25,7 @@ The **Network Emulator** is a simulation tool designed to mimic real-world netwo
 ### Compilation
 To compile the project using g++, for example:
 ```bash
-g++ -o network_emulator 20i-0700_20i-0607_20i-0681_P.cpp
+g++ -o network_emulator main.cpp
 
 ./network_emulator
 
